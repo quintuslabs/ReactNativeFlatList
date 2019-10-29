@@ -103,7 +103,7 @@ class Home extends Component {
       this.setState({
         selected: !this.state.selected,
         selectedId: item.item.id,
-        allSelected: !this.state.allSelected
+        allSelected: false
       });
     }
   };
