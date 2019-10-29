@@ -96,14 +96,14 @@ class Home extends Component {
     if (item.item.id == 0) {
       this.setState({
         selected: !this.state.selected,
-        allSelected: !this.state.allSelected,
-        selectedId: null
+        selectedId: null,
+        allSelected: !this.state.allSelected
       });
     } else {
       this.setState({
         selected: !this.state.selected,
         selectedId: item.item.id,
-        allSelected: false
+        allSelected: !this.state.allSelected
       });
     }
   };
